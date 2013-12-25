@@ -19,8 +19,8 @@ print_board(board)
 
 print " "
 
-"""board[3][2] = "X"
-print_board(board)"""
+board[3][2] = "X"
+print_board(board)
 
 def random_row(board):
     row_cnt = 0
@@ -34,15 +34,15 @@ def random_col(board):
         col_cnt = col_cnt + 1
     return randint(0, col_cnt - 1)
 
-#print random_row(board)
-#print random_col(board)
+print random_row(board)
+print random_col(board)
 
 
 ship_row = random_row(board)
 ship_col = random_col(board)
 
 
-#board[ship_row][ship_col] = "X"
-#print_board(board)
+board[ship_row][ship_col] = "X"
+print_board(board)
 
 
