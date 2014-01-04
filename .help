@@ -1,0 +1,8 @@
+// Export a db (schema?) from MySQL
+mysqldump -u username -p yourdbname > wantedsqlfile.sql
+// MySQL with promt you for a pasword
+
+// Import sql file to MySQL
+mysql -u username -p wanteddbname < filename.sql
+// MySQL with promt you for a pasword
+
