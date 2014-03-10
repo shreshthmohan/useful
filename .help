@@ -30,6 +30,9 @@ git diff
 // Git: see commited changes by key
 git show $key
 
+// Github: push changes to master branch on github
+git push origin master
+
 // Symlinking/soft-link/symbolic linking
 ln -s <target> <linkname>
 
