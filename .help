@@ -9,3 +9,20 @@ mysqldump -u root -p --no-data dbname > schema.sql
 // Import sql file to MySQL
 mysql -u username -p wanteddbname < filename.sql
 // MySQL with promt you for a password
+
+// To restore accidentally deleted file to working directory
+git checkout -- coupik.sql
+
+// Run utorrent  
+utserver -settingspath /opt/utorrent-server-alpha-v3_3/
+
+// Clone a gihub repo locally
+git clone git://github.com/coupiktest/coupik.git
+
+// Fix remote URL
+git remote set-url origin https://github.com/my_user_name/my_repo.git
+
+// Symlinking/soft-link/symbolic linking
+ln -s <target> <linkname>
+
+// Extract tar.bz2
