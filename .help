@@ -16,6 +16,8 @@ git checkout -- coupik.sql
 // Run utorrent  
 utserver -settingspath /opt/utorrent-server-alpha-v3_3/
 
+// And see gui in browser at: http://localhost:8080/gui enter username as adminand leave the password field blank
+
 // Clone a gihub repo locally
 git clone git://github.com/coupiktest/coupik.git
 
