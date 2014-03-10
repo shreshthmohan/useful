@@ -24,6 +24,12 @@ git clone git://github.com/coupiktest/coupik.git
 // Fix remote URL
 git remote set-url origin https://github.com/my_user_name/my_repo.git
 
+// Git: see staged changes
+git diff
+
+// Git: see commited changes by key
+git show $key
+
 // Symlinking/soft-link/symbolic linking
 ln -s <target> <linkname>
 
