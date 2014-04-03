@@ -37,3 +37,10 @@ git push origin master
 ln -s <target> <linkname>
 
 // Extract tar.bz2
+
+
+// Symbolic links (-s stands for symbolic)
+ln -s target_file.type link_name.type
+
+// Find disk usage
+df -Th
