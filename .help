@@ -44,3 +44,9 @@ ln -s target_file.type link_name.type
 
 // Find disk usage
 df -Th
+
+// Fixing display issue: Ubuntu not recognizing native resolution of Dell 18.5 in display
+cvt 1366 768
+xrandr --newmode "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+xrandr --addmode VGA-0 1366x768
+xrandr --output VGA-0 --mode "1366x768_60.00"
