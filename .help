@@ -47,6 +47,10 @@ df -Th
 
 // Fixing display issue: Ubuntu not recognizing native resolution of Dell 18.5 in display
 cvt 1366 768
-xrandr --newmode "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
-xrandr --addmode VGA-0 1366x768
-xrandr --output VGA-0 --mode "1366x768_60.00"
+//xrandr --newmode "1366x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+xrandr --newmode "1360x768_60.00"   84.75  1360 1432 1568 1776  768 771 781 798 -hsync +vsync
+xrandr --addmode VGA-0 "1360x768_60.00"
+xrandr --output VGA-0 --mode "1360x768_60.00"
+
+// To output stdout as well as stderr to a file
+command &> output.txt
