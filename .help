@@ -8,7 +8,7 @@ mysqldump -u root -p --no-data dbname > schema.sql
 
 // Import sql file to MySQL
 mysql -u username -p wanteddbname < filename.sql
-// MySQL with promt you for a password
+// MySQL will promt you for a password
 
 // To restore accidentally deleted file to working directory
 git checkout -- coupik.sql
@@ -44,6 +44,8 @@ ln -s target_file.type link_name.type
 
 // Find disk usage
 df -Th
+// Folder size
+du -h <folder_name> 
 
 // Fixing display issue: Ubuntu not recognizing native resolution of Dell 18.5 in display
 cvt 1366 768
@@ -54,3 +56,16 @@ xrandr --output VGA-0 --mode "1360x768_60.00"
 
 // To output stdout as well as stderr to a file
 command &> output.txt
+
+// Reboot command from terminal
+/sbin/shutdown -r now
+
+// Download a website with working local links
+wget --recursive  --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains website.com --no-parent website.com
+
+// Sometimes when mysql server is down running the following command might make it work
+sudo service mysql start
+
+// NPM find version of installed packages
+npm list
+npm list -g
