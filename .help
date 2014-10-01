@@ -69,3 +69,6 @@ sudo service mysql start
 // NPM find version of installed packages
 npm list
 npm list -g
+
+// Sound issues
+alsamixer
