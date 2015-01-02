@@ -5,6 +5,7 @@ mysqldump -u username -p yourdbname > wantedsqlfile.sql
 // Export schema without data
 mysqldump -u root -p --no-data dbname > schema.sql
 // MySQL with promt you for a password
+// Dont use --no-data if you want the data
 
 // Import sql file to MySQL
 mysql -u username -p wanteddbname < filename.sql
@@ -14,7 +15,8 @@ mysql -u username -p wanteddbname < filename.sql
 git checkout -- coupik.sql
 
 // Run utorrent  
-utserver -settingspath /opt/utorrent-server-alpha-v3_3/
+utserver -settingspath /opt/utorrent-server-v3_0/ &
+//TODO write script to install utorrent
 
 // And see gui in browser at: http://localhost:8080/gui enter username as adminand leave the password field blank
 
@@ -72,3 +74,7 @@ npm list -g
 
 // Sound issues
 alsamixer
+
+// Simply do the following from .ssh (properly setup with config and .pem)
+scp filename.type hostname
+
